@@ -1,0 +1,15 @@
+C:\Users\py\Desktop\gradebook\src\GradeBook\bin\Debug\net6.0\GradeBook.exe
+C:\Users\py\Desktop\gradebook\src\GradeBook\bin\Debug\net6.0\GradeBook.deps.json
+C:\Users\py\Desktop\gradebook\src\GradeBook\bin\Debug\net6.0\GradeBook.runtimeconfig.json
+C:\Users\py\Desktop\gradebook\src\GradeBook\bin\Debug\net6.0\GradeBook.dll
+C:\Users\py\Desktop\gradebook\src\GradeBook\bin\Debug\net6.0\ref\GradeBook.dll
+C:\Users\py\Desktop\gradebook\src\GradeBook\bin\Debug\net6.0\GradeBook.pdb
+C:\Users\py\Desktop\gradebook\src\GradeBook\obj\Debug\net6.0\GradeBook.csproj.AssemblyReference.cache
+C:\Users\py\Desktop\gradebook\src\GradeBook\obj\Debug\net6.0\GradeBook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\py\Desktop\gradebook\src\GradeBook\obj\Debug\net6.0\GradeBook.AssemblyInfoInputs.cache
+C:\Users\py\Desktop\gradebook\src\GradeBook\obj\Debug\net6.0\GradeBook.AssemblyInfo.cs
+C:\Users\py\Desktop\gradebook\src\GradeBook\obj\Debug\net6.0\GradeBook.csproj.CoreCompileInputs.cache
+C:\Users\py\Desktop\gradebook\src\GradeBook\obj\Debug\net6.0\GradeBook.dll
+C:\Users\py\Desktop\gradebook\src\GradeBook\obj\Debug\net6.0\ref\GradeBook.dll
+C:\Users\py\Desktop\gradebook\src\GradeBook\obj\Debug\net6.0\GradeBook.pdb
+C:\Users\py\Desktop\gradebook\src\GradeBook\obj\Debug\net6.0\GradeBook.genruntimeconfig.cache
