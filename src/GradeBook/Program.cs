@@ -9,36 +9,21 @@ namespace GradeBook
 
     static void Main(string[] args) 
     {
-        // Grade book as an object
-        var result = 0.0;
-        var average = 0.0;
+        Book GradeBook = new Book("Michael's GradeBook");
 
-        Book GradeBook = new Book("Michael's GradeBook")
+        List<double> data = new List<double>() 
+        {10.1,23.4,34.3,18.9,18.20,90.0,12.90,89.89,89.0,34.89,12.90};
 
-        List<double> grades = new List<double>() {10.1,23.4,34.3,18.9,18.20};
+        // load that through a process
 
-        GradeBook.AddGrade(10.1);
-        GradeBook.AddGrade(90.1);
-        GradeBook.AddGrade(78.1);
-        GradeBook.AddGrade(67.1);
-
-        foreach(double grade in grades)
+        foreach(var element in data)
         {
-            result += grade;
-
+          GradeBook.AddGrade(element);
         }
 
-        average = result / grades.Count;
-        if(args.Length > 0) 
-        {
-            Console.WriteLine($"Welcome to , {GradeBook.name} !");
-        }
-        else
-        {
-            Console.WriteLine("hello, Stranger!");
-            Console.WriteLine($"Sum of Grades is equal to {result:N2} !");
-            Console.WriteLine($"Average of the Grades is {average:N2} !");
-        }
+        // statistics
+        GradeBook.ShowStatistics();
+
     }
   }
 }
