@@ -15,7 +15,7 @@ namespace GradeBook
         }
 
         public void AddGrade(double grade){
-            grades.Add(grade);
+            Grades.Add(grade);
         }
 
         public Statistics ComputeStatistics()
@@ -25,7 +25,7 @@ namespace GradeBook
             result.maximum = double.MaxValue;
             result.minimum = double.MinValue;
 
-            foreach(var grade in this.grades)
+            foreach(var grade in this.Grades)
             {
                 result.total += grade;
                 result.maximum = Math.Max(grade, result.maximum);
@@ -33,14 +33,14 @@ namespace GradeBook
             } 
 
             // average
-            result.average = result.total / this.grades.Count;
+            result.average = result.total / this.Grades.Count;
 
             return result;
         }
         
         public void ShowStatistics(Statistics result)
         {
-            Console.WriteLine($"*******Simple Statistics for {this.name}*******");
+            Console.WriteLine($"*******Simple Statistics for {this.Name}*******");
             Console.WriteLine($"The total is {result.total:N2}");
             Console.WriteLine($"The average is {result.average:N2}");
             Console.WriteLine($"The maximum grade is {result.maximum}");
