@@ -22,7 +22,8 @@ namespace GradeBook
         }
 
         // statistics
-        GradeBook.ShowStatistics();
+        var stats = GradeBook.ComputeStatistics();
+        GradeBook.ShowStatistics(stats);
 
     }
   }

@@ -18,29 +18,34 @@ namespace GradeBook
             grades.Add(grade);
         }
 
-        public void ShowStatistics()
+        public Statistics ComputeStatistics()
         {
-            var total = 0.0;
-            var average = 0.0;
-            var max = double.MaxValue;
-            var min = double.MinValue;
+            Var result = new statistics()
+
+            result.maximum = double.MaxValue;
+            result.minimum = double.MinValue;
 
             foreach(var grade in this.grades)
             {
-                total += grade;
-                max = Math.Max(grade, max);
-                min = Math.Min(grade, min);
-            }
+                result.total += grade;
+                result.maximum = Math.Max(grade, result.maximum);
+                result.minimum = Math.Min(grade, result.minimum);
+            } 
 
             // average
+            result.average = result.total / this.grades.Count;
 
-            average = total / this.grades.Count;
+            return result;
 
+        }
+        
+        public void ShowStatistics(Statistics result)
+        {
             Console.WriteLine($"*******Simple Statistics for {this.name}*******");
-            Console.WriteLine($"The total is {total:N2}");
-            Console.WriteLine($"The average is {average:N2}");
-            Console.WriteLine($"The maximum grade is {max}");
-            Console.WriteLine($"The minimum grade is {min}");
+            Console.WriteLine($"The total is {result.total:N2}");
+            Console.WriteLine($"The average is {result.average:N2}");
+            Console.WriteLine($"The maximum grade is {result.maximum}");
+            Console.WriteLine($"The minimum grade is {result.minimum}");
         }
     }
 }
