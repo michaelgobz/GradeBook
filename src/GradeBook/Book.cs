@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System
+using System;
 namespace GradeBook 
 {
     public class Book 
@@ -20,7 +20,7 @@ namespace GradeBook
 
         public Statistics ComputeStatistics()
         {
-            Var result = new statistics()
+            Statistics result = new Statistics();
 
             result.maximum = double.MaxValue;
             result.minimum = double.MinValue;
