@@ -1,7 +1,8 @@
 using System.Collections.Generic;
+using System
 namespace GradeBook 
 {
-    class Book 
+    public class Book 
     {
         private List<double> grades;
         public string name;
