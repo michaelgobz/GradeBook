@@ -18,7 +18,7 @@ public class BookTests
         TestableBook.AddGrade(46.90);
 
         // act
-        var stats = TestableBook.ComputeStatistics()
+        var stats = TestableBook.ComputeStatistics();
 
         // assert
 
