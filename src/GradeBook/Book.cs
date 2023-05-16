@@ -4,13 +4,13 @@ namespace GradeBook
 {
     public class Book 
     {
-        private List<double> grades;
-        public string name;
+        private List<double> Grades;
+        public string Name;
 
         public Book(string name)
         {
-           this.grades = new List<double>();
-           this.name = name;
+           this.Grades = new List<double>();
+           this.Name = name;
 
         }
 
