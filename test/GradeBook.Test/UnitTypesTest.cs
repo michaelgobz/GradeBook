@@ -39,7 +39,7 @@ namespace GradeBook.Test
             var name = "Michael's GradeBook";
 
             //act
-            SetName(boo5, name);
+            SetName(book5, name);
 
             //assert 
             Assert.Equal(name, book5.Name);
@@ -51,7 +51,7 @@ namespace GradeBook.Test
             return new Book(name);
         }
 
-        internal private void SetName(Book b, string name)
+        private void SetName(Book b, string name)
         {
             b.Name = name;         
         }
