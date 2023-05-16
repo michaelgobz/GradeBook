@@ -3,9 +3,9 @@ using System;
 
 namespace GradeBook.Test
 {
-    [Fact]
     public class TypesTest
     {
+        [Fact]
         public void TestBookType()
         {
             Book book1 = GetBook("book 1");
