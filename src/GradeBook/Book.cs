@@ -36,7 +36,6 @@ namespace GradeBook
             result.average = result.total / this.grades.Count;
 
             return result;
-
         }
         
         public void ShowStatistics(Statistics result)
