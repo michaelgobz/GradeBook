@@ -23,9 +23,16 @@ namespace GradeBook
           if (input == "q"){
             break;
           }
+          try 
+          {
+            var grade = double.Parse(input);
+            GradeBook.AddGrade(grade);
+          } 
+          catch(Exception e)
+          {
+            Console.WriteLine(e.Message);
+          }
           
-          var grade = double.Parse(input);
-          GradeBook.AddGrade(grade);
         }
 
         // statistics
