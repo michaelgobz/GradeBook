@@ -10,6 +10,7 @@ namespace GradeBook
     static void Main(string[] args) 
     {
         Book GradeBook = new Book("Michael's GradeBook");
+        GradeBook.GradeAdded += onGradeAdded;
 
         //grab the user input
 
@@ -43,6 +44,10 @@ namespace GradeBook
         var stats = GradeBook.ComputeStatistics();
         GradeBook.ShowStatistics(stats);
 
+    }
+
+    static void onGradeAdded(object sender , EventArgs args){
+      Console.WriteLine("A grade was Added");
     }
   }
 }

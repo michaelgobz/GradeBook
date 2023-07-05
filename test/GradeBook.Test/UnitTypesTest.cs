@@ -4,8 +4,32 @@ using GradeBook;
 
 namespace GradeBook.Test
 {
+    public delegate string WriteLogDelegate(string message);
     public class TypesTest
     {
+        int count = 0;
+        [Fact]
+        public void TestWriteLogDelegate(){
+            WriteLogDelegate logger = LogMessage;
+            logger = LogMessage;
+            logger = CountLogMessage;
+
+            var result = logger("hello Dear");
+
+            Assert.Equal(3,count);
+        }
+
+        public string LogMessage(string message){
+            count =+ 1;
+            return message;
+        }
+
+        public string CountLogMessage(string message){
+            count =+ 1;
+            return message;
+
+        }
+
         [Fact]
         public void TestBookType()
         {

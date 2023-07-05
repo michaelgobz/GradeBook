@@ -4,7 +4,10 @@ namespace GradeBook
 {
     public class Book 
     {
+        public delegate void GradeAddDelegate(object sender , EventArgs args);
         private List<double> Grades;
+        public event GradeAddDelegate GradeAdded;
+
         public string Name {
             get
             {
@@ -33,12 +36,14 @@ namespace GradeBook
         {
            this.Grades = new List<double>();
            this.name = name;
-
         }
 
         public void AddGrade(double grade){
             if (grade <= 100 && grade >= 0){
                 Grades.Add(grade);
+                if (GradeAdded != null){
+                    GradeAdded(this, new EventArgs());
+                }
             } 
             else 
             {
