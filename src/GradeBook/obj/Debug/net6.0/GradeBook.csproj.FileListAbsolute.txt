@@ -2,7 +2,6 @@ C:\Users\py\Desktop\gradebook\src\GradeBook\bin\Debug\net6.0\GradeBook.exe
 C:\Users\py\Desktop\gradebook\src\GradeBook\bin\Debug\net6.0\GradeBook.deps.json
 C:\Users\py\Desktop\gradebook\src\GradeBook\bin\Debug\net6.0\GradeBook.runtimeconfig.json
 C:\Users\py\Desktop\gradebook\src\GradeBook\bin\Debug\net6.0\GradeBook.dll
-C:\Users\py\Desktop\gradebook\src\GradeBook\bin\Debug\net6.0\ref\GradeBook.dll
 C:\Users\py\Desktop\gradebook\src\GradeBook\bin\Debug\net6.0\GradeBook.pdb
 C:\Users\py\Desktop\gradebook\src\GradeBook\obj\Debug\net6.0\GradeBook.csproj.AssemblyReference.cache
 C:\Users\py\Desktop\gradebook\src\GradeBook\obj\Debug\net6.0\GradeBook.GeneratedMSBuildEditorConfig.editorconfig
@@ -28,3 +27,4 @@ C:\Users\Administrator\Desktop\project\Gradebook\src\GradeBook\obj\Debug\net6.0\
 C:\Users\Administrator\Desktop\project\Gradebook\src\GradeBook\obj\Debug\net6.0\GradeBook.pdb
 C:\Users\Administrator\Desktop\project\Gradebook\src\GradeBook\obj\Debug\net6.0\GradeBook.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\project\Gradebook\src\GradeBook\obj\Debug\net6.0\ref\GradeBook.dll
+C:\Users\py\Desktop\gradebook\src\GradeBook\obj\Debug\net6.0\refint\GradeBook.dll
