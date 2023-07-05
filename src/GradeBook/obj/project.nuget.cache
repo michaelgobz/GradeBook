@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HPdhYzyWoThunQ7hYN6hsd2Ku11qgtLCORsg4RHbXz6oXQU+mzxGKgpte0ENoiJO2bB4HH564Z5PknScCQsWVg==",
+  "dgSpecHash": "inCY6/3A0K2PnxoIIoLfyadGasVG35spRf2u4F0c7FZ8jqSCavVZ40XB8QNcIORpki9x50KGU5RyuP4PYINDsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\py\\Desktop\\gradebook\\src\\Gradebook\\GradeBook.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\py\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
-    "C:\\Users\\py\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
-    "C:\\Users\\py\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
-    "C:\\Users\\py\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Administrator\\Source\\Repos\\michaelgobz\\GradeBook\\src\\GradeBook\\GradeBook.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

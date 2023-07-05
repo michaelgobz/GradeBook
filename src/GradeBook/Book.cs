@@ -23,7 +23,7 @@ namespace GradeBook
         }
 
 
-        public Book(string name)
+		public Book(string name)
         {
             this.Grades = new List<double>();
             this.Name = name;
