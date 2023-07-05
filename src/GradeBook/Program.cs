@@ -2,12 +2,12 @@
 using System;
 using System.Collections.Generic;
 
-namespace GradeBook 
+namespace GradeBook
 {
-  class Program 
-  {
+    class Program
+    {
 
-    static void Main(string[] args)
+        static void Main(string[] args)
         {
             Book GradeBook = new Book("Michael's GradeBook");
             GradeBook.GradeAdded += onGradeAdded;
@@ -16,52 +16,60 @@ namespace GradeBook
 
             Console.WriteLine("Welcome to Our Gradebook Calculator \n");
             Console.WriteLine("......................................... \n");
-
-            AddGrades(GradeBook);
-
-            // statistics
+            try {
+              AddGrades(GradeBook);
+               // statistics
             var stats = new Statistics();
             GradeBook.ShowAndPrintStatistics(stats);
 
+            } catch (NullReferenceException e){
+              Console.WriteLine(e.Message);
+            }
         }
 
         private static void AddGrades(Book GradeBook)
         {
-          try{
-            while (true)
+            try
             {
-                Console.WriteLine("Please Enter a grade of 'q' to quit \n");
+                while (true)
+                {
+                    Console.WriteLine("Please Enter a grade of 'q' to quit \n");
 
-                var input = Console.ReadLine();
-
+                    var input = Console.ReadLine();
+    
                 if (input == "q")
-                {
-                    break;
+                    {
+                        break;
+                    }
+                    if (input != null)
+                    {
+                        try
+                        {
+                            var grade = double.Parse(input);
+                            GradeBook.AddGrade(grade);
+                        }
+                        catch (ArgumentException e)
+                        {
+                            Console.WriteLine(e.Message);
+                        }
+                        catch (NullReferenceException e)
+                        {
+                            Console.WriteLine(e.Message);
+                        }
+                    }
                 }
-                try
-                {
-                    var grade = double.Parse(input);
-                    GradeBook.AddGrade(grade);
-                }
-                catch (ArgumentException e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-                catch (NullReferenceException e)
-                {
-                    Console.WriteLine(e.Message);
-                }
+
+
             }
-
-
-          } catch(NullReferenceException e)
-          {
-            Console.WriteLine(e.Message);
-          }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
-        static void onGradeAdded(object sender , EventArgs args){
-      Console.WriteLine("A grade was Added");
+        static void onGradeAdded(object sender, EventArgs args)
+        {
+            Console.WriteLine("A grade was Added");
+        }
     }
-  }
 }
