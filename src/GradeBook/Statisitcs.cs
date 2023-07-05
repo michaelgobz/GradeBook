@@ -25,15 +25,6 @@ namespace GradeBook
         public double maximum;
         public double minimum;
 
-        public Statistics()
-        {
-            Average = 0.0;
-            Sum = 0.0;
-            maximum = double.MaxValue;
-            minimum = double.MinValue;
-
-        }
-
         public char Letter
         {
             get
@@ -60,6 +51,16 @@ namespace GradeBook
                 }
             }
         }
+
+        public Statistics()
+        {
+            Average = 0.0;
+            Sum = 0.0;
+            maximum = double.MaxValue;
+            minimum = double.MinValue;
+
+        }
+        
         public void Add(double number)
         {
             Sum =+ number;

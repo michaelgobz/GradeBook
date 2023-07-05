@@ -10,21 +10,23 @@ namespace GradeBook
         static void Main(string[] args)
         {
             Book GradeBook = new Book("Michael's GradeBook");
+            Statistics stats = new Statistics();
             GradeBook.GradeAdded += onGradeAdded;
 
             //grab the user input
-
             Console.WriteLine("Welcome to Our Gradebook Calculator \n");
             Console.WriteLine("......................................... \n");
-            try {
-              AddGrades(GradeBook);
-               // statistics
-            var stats = new Statistics();
-            GradeBook.ShowAndPrintStatistics(stats);
 
-            } catch (NullReferenceException e){
+            try 
+            {
+               AddGrades(GradeBook);
+               GradeBook.ShowAndPrintStatistics(stats);
+            } 
+            catch (NullReferenceException e)
+            {
               Console.WriteLine(e.Message);
             }
+            
         }
 
         private static void AddGrades(Book GradeBook)
