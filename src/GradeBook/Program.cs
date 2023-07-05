@@ -43,7 +43,7 @@ namespace GradeBook
                     {
                         break;
                     }
-                    if (input != null)
+                if (input != null)
                     {
                         try
                         {
