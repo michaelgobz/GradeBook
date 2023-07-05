@@ -11,8 +11,8 @@ namespace GradeBook.Test
         [Fact]
         public void TestWriteLogDelegate(){
             WriteLogDelegate logger = LogMessage;
-            logger = LogMessage;
-            logger = CountLogMessage;
+            logger += LogMessage;
+            logger += CountLogMessage;
 
             var result = logger("hello Dear");
 

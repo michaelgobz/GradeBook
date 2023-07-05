@@ -17,8 +17,6 @@ namespace GradeBook
 
             set 
             {
-                if(!String.IsNullOrEmpty(value)
-                {
                     try 
                     {
                         name = value;
@@ -26,7 +24,6 @@ namespace GradeBook
                     catch (Exception e){
                         Console.WriteLine(e.Message);
                     }
-                }
             }
         }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YCdIQeEVzxAxKxZdpQ3xVRak2RnuNjqX6vKcTnFpps2nVr/KpQ73sXOQzsBuBmfSOLGUdiIe37cj36O5MLn8KA==",
+  "dgSpecHash": "HPdhYzyWoThunQ7hYN6hsd2Ku11qgtLCORsg4RHbXz6oXQU+mzxGKgpte0ENoiJO2bB4HH564Z5PknScCQsWVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\py\\Desktop\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+  "projectFilePath": "C:\\Users\\py\\Desktop\\gradebook\\src\\Gradebook\\GradeBook.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\py\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\py\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
