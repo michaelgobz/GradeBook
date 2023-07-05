@@ -18,12 +18,16 @@ namespace GradeBook
             Grades.Add(grade);
         }
 
+        public void AddLetterGrade(char Letter){
+
+        }
+
         public Statistics ComputeStatistics()
         {
             Statistics result = new Statistics();
 
-            result.maximum = double.MaxValue;
-            result.minimum = double.MinValue;
+            result.maximum = 0.0;
+            result.minimum = 0.0;
 
             foreach(var grade in this.Grades)
             {
@@ -34,6 +38,30 @@ namespace GradeBook
 
             // average
             result.average = result.total / this.Grades.Count;
+            // compute the letter grade
+
+            switch(result.average)
+            {
+                case var d when d >= 90.0:
+                    result.Letter = 'A';
+                    break;
+                case var d when d >= 80.0:
+                    result.Letter = 'B';
+                    break;
+                case var d when d >= 70.0:
+                    result.Letter = 'C';
+                    break;
+                case var d when d >= 60.0:
+                    result.Letter = 'D';
+                    break;
+                case var d when d >= 50.0:
+                    result.Letter = 'E';
+                    break;
+                default:
+                    result.Letter = 'F';
+                    break;
+                
+            }
 
             return result;
         }
@@ -45,6 +73,7 @@ namespace GradeBook
             Console.WriteLine($"The average is {result.average:N2}");
             Console.WriteLine($"The maximum grade is {result.maximum}");
             Console.WriteLine($"The minimum grade is {result.minimum}");
+            Console.WriteLine($"The letter grade is {result.Letter}");
         }
     }
 }

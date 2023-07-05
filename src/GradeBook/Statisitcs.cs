@@ -6,6 +6,7 @@ namespace GradeBook
         public double average;
         public double maximum;
         public double minimum;
+        public char Letter;
 
     }
 }

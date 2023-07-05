@@ -11,14 +11,21 @@ namespace GradeBook
     {
         Book GradeBook = new Book("Michael's GradeBook");
 
-        List<double> data = new List<double>() 
-        {10.1,23.4,34.3,18.9,18.20,90.0,12.90,89.89,89.0,34.89,12.90};
+        //grab the user input
 
-        // load that through a process
+        while(true) {
+          Console.WriteLine("Welcome to Our Gradebook Calculator \n");
+          Console.WriteLine("......................................... \n");
+          Console.WriteLine("Please Enter a grade of 'q' to quit \n");
 
-        foreach(var element in data)
-        {
-          GradeBook.AddGrade(element);
+          var input = Console.ReadLine();
+          
+          if (input == "q"){
+            break;
+          }
+          
+          var grade = double.Parse(input);
+          GradeBook.AddGrade(grade);
         }
 
         // statistics
