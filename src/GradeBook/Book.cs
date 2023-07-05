@@ -1,54 +1,60 @@
 using System.Collections.Generic;
 using System;
-namespace GradeBook 
+namespace GradeBook
 {
-    public class Book 
+    public interface IBook
     {
-        public delegate void GradeAddDelegate(object sender , EventArgs args);
+        void AddGrade(double grade);
+        Statistics ComputeStatistics();
+        void ShowStatistics(Statistics result);
+        event GradeAddDelegate GradeAdded;
+        string Name { get; }
+    }
+
+    public delegate void GradeAddDelegate(object sender, EventArgs args);
+
+    public class NamedObject 
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+
+    }
+
+    public class Book : NamedObject, IBook
+    {
         private List<double> Grades;
         public event GradeAddDelegate GradeAdded;
 
-        public string Name {
-            get
-            {
-                return name;
-
-            }
-
-            set 
-            {
-                    try 
-                    {
-                        name = value;
-                    }
-                    catch (Exception e){
-                        Console.WriteLine(e.Message);
-                    }
-            }
-        }
-
         private String name;
+
 
         public Book(string name)
         {
-           this.Grades = new List<double>();
-           this.name = name;
+            this.Grades = new List<double>();
+            this.name = name;
         }
 
-        public void AddGrade(double grade){
-            if (grade <= 100 && grade >= 0){
+        public void AddGrade(double grade)
+        {
+            if (grade <= 100 && grade >= 0)
+            {
                 Grades.Add(grade);
-                if (GradeAdded != null){
+                if (GradeAdded != null)
+                {
                     GradeAdded(this, new EventArgs());
                 }
-            } 
-            else 
+            }
+            else
             {
                 throw new ArgumentException($"invalid {nameof(grade)}");
             }
         }
 
-        public void AddLetterGrade(char Letter){
+        public void AddLetterGrade(char Letter)
+        {
 
         }
 
@@ -59,18 +65,18 @@ namespace GradeBook
             result.maximum = 0.0;
             result.minimum = 0.0;
 
-            foreach(var grade in this.Grades)
+            foreach (var grade in this.Grades)
             {
                 result.total += grade;
                 result.maximum = Math.Max(grade, result.maximum);
                 result.minimum = Math.Min(grade, result.minimum);
-            } 
+            }
 
             // average
             result.average = result.total / this.Grades.Count;
             // compute the letter grade
 
-            switch(result.average)
+            switch (result.average)
             {
                 case var d when d >= 90.0:
                     result.Letter = 'A';
@@ -90,12 +96,12 @@ namespace GradeBook
                 default:
                     result.Letter = 'F';
                     break;
-                
+
             }
 
             return result;
         }
-        
+
         public void ShowStatistics(Statistics result)
         {
             Console.WriteLine($"For the Book named .... {this.Name}");
