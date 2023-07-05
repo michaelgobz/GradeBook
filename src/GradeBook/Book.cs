@@ -5,18 +5,39 @@ namespace GradeBook
     public class Book 
     {
         private List<double> Grades;
-        public string Name;
+        public string Name {
+            get
+            {
+                return name;
+
+            }
+
+            set 
+            {
+                if(!String.IsNullOrEmpty(value)
+                {
+                    try 
+                    {
+                        name = value;
+                    }
+                    catch (Exception e){
+                        Console.WriteLine(e.Message);
+                    }
+                }
+            }
+        }
+
+        private String name;
 
         public Book(string name)
         {
            this.Grades = new List<double>();
-           this.Name = name;
+           this.name = name;
 
         }
 
         public void AddGrade(double grade){
-            if (grade <= 100 && grade >= 0)
-            {
+            if (grade <= 100 && grade >= 0){
                 Grades.Add(grade);
             } 
             else 
@@ -75,7 +96,7 @@ namespace GradeBook
         
         public void ShowStatistics(Statistics result)
         {
-            Console.WriteLine($"*******Simple Statistics for {this.Name}*******");
+            Console.WriteLine($"For the Book named .... {this.Name}");
             Console.WriteLine($"The total is {result.total:N2}");
             Console.WriteLine($"The average is {result.average:N2}");
             Console.WriteLine($"The maximum grade is {result.maximum}");
