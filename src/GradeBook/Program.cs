@@ -13,9 +13,10 @@ namespace GradeBook
 
         //grab the user input
 
+        Console.WriteLine("Welcome to Our Gradebook Calculator \n");
+        Console.WriteLine("......................................... \n");
+
         while(true) {
-          Console.WriteLine("Welcome to Our Gradebook Calculator \n");
-          Console.WriteLine("......................................... \n");
           Console.WriteLine("Please Enter a grade of 'q' to quit \n");
 
           var input = Console.ReadLine();
@@ -28,8 +29,11 @@ namespace GradeBook
             var grade = double.Parse(input);
             GradeBook.AddGrade(grade);
           } 
-          catch(Exception e)
+          catch(ArgumentException e)
           {
+            Console.WriteLine(e.Message);
+          }
+          catch(NullReferenceException e){
             Console.WriteLine(e.Message);
           }
           
