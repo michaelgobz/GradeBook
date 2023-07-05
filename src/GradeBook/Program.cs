@@ -20,8 +20,8 @@ namespace GradeBook
             AddGrades(GradeBook);
 
             // statistics
-            var stats = GradeBook.ComputeStatistics();
-            GradeBook.ShowStatistics(stats);
+            var stats = new Statistics();
+            GradeBook.ShowAndPrintStatistics(stats);
 
         }
 

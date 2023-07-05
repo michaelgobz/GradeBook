@@ -5,7 +5,7 @@ namespace GradeBook
     public interface IBook
     {
         void AddGrade(double grade);
-        void ShowStatistics(Statistics result);
+        void ShowAndPrintStatistics(Statistics result);
         event GradeAddDelegate GradeAdded;
         string Name { get; }
     }
@@ -40,6 +40,7 @@ namespace GradeBook
         {
             if (grade <= 100 && grade >= 0)
             {
+                using(var writer; File.AppendText)
                 Grades.Add(grade);
                 if (GradeAdded != null)
                 {
