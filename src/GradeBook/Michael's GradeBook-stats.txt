@@ -1,0 +1,6 @@
+For the Book named .... Michael's GradeBook
+The total is 56.00
+The average is 56.00
+The maximum grade is 1.7976931348623157E+308
+The minimum grade is -1.7976931348623157E+308
+The letter grade is E

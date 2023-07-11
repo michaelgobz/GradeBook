@@ -50,11 +50,11 @@ namespace GradeBook
         public void ShowAndPrintStatistics(Statistics result)
         {
             using(var reader = File.OpenText($"{Name}.txt")){
-                var line = reader.ReadLine();
+                string? line = reader.ReadLine();
                 while(line != null){
                     var number = double.Parse(line);
                     result.Add(number);
-                    reader.ReadLine();
+                    line = reader.ReadLine();
                 }
             }
 
