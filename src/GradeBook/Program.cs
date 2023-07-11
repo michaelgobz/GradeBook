@@ -15,7 +15,7 @@ namespace GradeBook
 
             //grab the user input
             Console.WriteLine("Welcome to Our Gradebook Calculator \n");
-            Console.WriteLine("......................................... \n");
+            Console.WriteLine(".........................................\n");
 
             try 
             {
