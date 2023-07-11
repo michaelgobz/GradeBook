@@ -56,8 +56,8 @@ namespace GradeBook
         {
             Average = 0.0;
             Sum = 0.0;
-            maximum = double.MaxValue;
-            minimum = double.MinValue;
+            maximum = double.MinValue;
+            minimum = double.MaxValue;
 
         }
         
