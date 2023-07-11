@@ -63,8 +63,8 @@ namespace GradeBook
         
         public void Add(double number)
         {
-            Sum =+ number;
-            count =+ 1;
+            Sum += number;
+            count += 1;
             maximum = Math.Max(number, maximum);
             minimum = Math.Min(number, minimum);
         }
