@@ -6,7 +6,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/net6.0/GradeBook.dll",
+            "program": "${workspaceFolder}/src/GradeBook/bin/Debug/net6.0/GradeBook.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
@@ -19,7 +19,7 @@
             "name": ".NET Core Launch (console)",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
+            "preLaunchTask": "run",
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/src/GradeBook/bin/Debug/net6.0/GradeBook.dll",
             "args": [],
