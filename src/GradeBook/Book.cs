@@ -67,6 +67,7 @@ namespace GradeBook
                 writer.WriteLine($"The maximum grade is {result.maximum}");
                 writer.WriteLine($"The minimum grade is {result.minimum}");
                 writer.WriteLine($"The letter grade is {result.Letter}");
+                writer.WriteLine($"......................................... \n");
             }
 
             Console.WriteLine($"For the Book named .... {this.Name}");
@@ -75,6 +76,7 @@ namespace GradeBook
             Console.WriteLine($"The maximum grade is {result.maximum}");
             Console.WriteLine($"The minimum grade is {result.minimum}");
             Console.WriteLine($"The letter grade is {result.Letter}");
+            Console.WriteLine("......................................... \n");
         }
     }
 }
