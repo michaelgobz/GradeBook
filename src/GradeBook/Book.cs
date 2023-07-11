@@ -29,6 +29,11 @@ namespace GradeBook
             this.Name = name;
         }
 
+        private GradeAddDelegate EventArgs()
+        {
+            throw new NotImplementedException();
+        }
+
         public void AddGrade(double grade)
         {
             if (grade <= 100 && grade >= 0)
