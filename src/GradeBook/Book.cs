@@ -61,22 +61,26 @@ namespace GradeBook
             // write the statics to file
             using(var writer = File.AppendText($"{Name}-stats.txt"))
             {
-                writer.WriteLine($"For the Book named .... {this.Name}");
-                writer.WriteLine($"The total is {result.total:N2}");
-                writer.WriteLine($"The average is {result.Average:N2}");
-                writer.WriteLine($"The maximum grade is {result.maximum}");
-                writer.WriteLine($"The minimum grade is {result.minimum}");
-                writer.WriteLine($"The letter grade is {result.Letter}");
-                writer.WriteLine($"......................................... \n");
+                writer.WriteLine($"| ...............................................|");
+                writer.WriteLine($"| For the Book named .... | {this.Name}  |");
+                writer.WriteLine($"| The Total is            | {result.total:N2}             |");
+                writer.WriteLine($"| The Average is          | {result.Average:N2}                |");
+                writer.WriteLine($"| The Maximum grade is    | {result.maximum}                  |");
+                writer.WriteLine($"| The Minimum grade is    | {result.minimum}                    |");
+                writer.WriteLine($"| The Letter grade is     | {result.Letter}                    |");
+                writer.WriteLine($"| The Number of Person is | {result.Count}                   |");
+                writer.WriteLine($"| ...............................................| \n");
             }
 
-            Console.WriteLine($"For the Book named .... {this.Name}");
-            Console.WriteLine($"The total is {result.total:N2}");
-            Console.WriteLine($"The average is {result.Average:N2}");
-            Console.WriteLine($"The maximum grade is {result.maximum}");
-            Console.WriteLine($"The minimum grade is {result.minimum}");
-            Console.WriteLine($"The letter grade is {result.Letter}");
-            Console.WriteLine("......................................... \n");
+                Console.WriteLine($"| ...............................................|");
+                Console.WriteLine($"| For the Book named .... | {this.Name}  |");
+                Console.WriteLine($"| The Total is            | {result.total:N2}             |");
+                Console.WriteLine($"| The Average is          | {result.Average:N2}                |");
+                Console.WriteLine($"| The Maximum grade is    | {result.maximum}                  |");
+                Console.WriteLine($"| The Minimum grade is    | {result.minimum}                    |");
+                Console.WriteLine($"| The Letter grade is     | {result.Letter}                    |");
+                Console.WriteLine($"| The Number of Person is | {result.Count}                   |");
+                Console.WriteLine($"| ...............................................| \n");
         }
     }
 }

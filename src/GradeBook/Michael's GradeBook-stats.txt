@@ -1,0 +1,20 @@
+| ...............................................|
+| For the Book named .... | Michael's GradeBook  |
+| The Total is            | 1,901.00             |
+| The Average is          | 51.38                |
+| The Maximum grade is    | 100                  |
+| The Minimum grade is    | 9                    |
+| The Letter grade is     | E                    |
+| The Number of Person is | 37                   |
+| ...............................................| 
+
+| ...............................................|
+| For the Book named .... | Michael's GradeBook  |
+| The Total is            | 1,901.00             |
+| The Average is          | 51.38                |
+| The Maximum grade is    | 100                  |
+| The Minimum grade is    | 9                    |
+| The Letter grade is     | E                    |
+| The Number of Person is | 37                   |
+| ...............................................| 
+

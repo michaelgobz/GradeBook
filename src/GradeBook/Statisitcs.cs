@@ -2,7 +2,7 @@ namespace GradeBook
 {
     public class Statistics
     {
-        private int count;
+        public int Count;
         public double Sum;
         public double total
         {
@@ -15,7 +15,7 @@ namespace GradeBook
         {
             get
             {
-                return Sum / count;
+                return Sum / Count;
             }
 
             set {
@@ -64,7 +64,7 @@ namespace GradeBook
         public void Add(double number)
         {
             Sum += number;
-            count += 1;
+            Count += 1;
             maximum = Math.Max(number, maximum);
             minimum = Math.Min(number, minimum);
         }
