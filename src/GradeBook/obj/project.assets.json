@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\py\\Desktop\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+      "projectUniqueName": "D:\\Desktop_files\\projects\\gradebook\\src\\GradeBook\\GradeBook.csproj",
       "projectName": "GradeBook",
-      "projectPath": "C:\\Users\\py\\Desktop\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+      "projectPath": "D:\\Desktop_files\\projects\\gradebook\\src\\GradeBook\\GradeBook.csproj",
       "packagesPath": "C:\\Users\\py\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\py\\Desktop\\gradebook\\src\\GradeBook\\obj\\",
+      "outputPath": "D:\\Desktop_files\\projects\\gradebook\\src\\GradeBook\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\py\\AppData\\Roaming\\NuGet\\NuGet.Config"
